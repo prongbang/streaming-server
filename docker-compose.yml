@@ -1,0 +1,10 @@
+version: '3.5'
+services: 
+  streamming:
+    image: jasonrivers/nginx-rtmp
+    container_name: nginx-rtmp
+    ports: 
+      - "1935:1935"
+      - "8080:8080"
+    restart: always
+    
